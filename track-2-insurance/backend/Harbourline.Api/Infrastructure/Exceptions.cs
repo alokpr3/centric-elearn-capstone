@@ -1,0 +1,52 @@
+using Microsoft.AspNetCore.Diagnostics;
+using Microsoft.AspNetCore.Mvc;
+
+namespace Harbourline.Api.Infrastructure;
+
+public class NotFoundException : Exception
+{
+    public NotFoundException(string message) : base(message) { }
+}
+
+public class ConflictException : Exception
+{
+    public ConflictException(string message) : base(message) { }
+}
+
+public class BusinessRuleException : Exception
+{
+    public BusinessRuleException(string message) : base(message) { }
+}
+
+public class ApiExceptionHandler : IExceptionHandler
+{
+    private readonly ILogger<ApiExceptionHandler> _logger;
+
+    public ApiExceptionHandler(ILogger<ApiExceptionHandler> logger) => _logger = logger;
+
+    public async ValueTask<bool> TryHandleAsync(HttpContext context, Exception exception, CancellationToken ct)
+    {
+        var (status, title) = exception switch
+        {
+            NotFoundException => (404, "Not found"),
+            ConflictException => (409, "Conflict"),
+            BusinessRuleException => (422, "Business rule violated"),
+            FluentValidation.ValidationException => (400, "Validation failed"),
+            _ => (500, "Unexpected error")
+        };
+        if (status == 500) _logger.LogError(exception, "Unhandled exception");
+
+        if (exception is FluentValidation.ValidationException ve)
+        {
+            var errors = ve.Errors.GroupBy(e => e.PropertyName).ToDictionary(g => g.Key, g => g.Select(e => e.ErrorMessage).ToArray());
+            context.Response.StatusCode = 400;
+            await context.Response.WriteAsJsonAsync(new ValidationProblemDetails(errors) { Status = 400, Title = title }, (System.Text.Json.JsonSerializerOptions?)null, "application/problem+json", ct);
+            return true;
+        }
+
+        var problem = new ProblemDetails { Status = status, Title = title, Detail = status == 500 ? "An unexpected error occurred." : exception.Message };
+        context.Response.StatusCode = status;
+        await context.Response.WriteAsJsonAsync(problem, (System.Text.Json.JsonSerializerOptions?)null, "application/problem+json", ct);
+        return true;
+    }
+}

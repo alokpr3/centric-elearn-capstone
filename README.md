@@ -1,61 +1,34 @@
-# Claude Code Capstone (Day 7 and Day 8)
+# Capstone: five inherited codebases
 
-You learned CLAUDE.md, skills, hooks, slash commands, agents and MCP. Now you use all of them to fix and grow a small real app.
+This capstone puts you in the seat of an engineer who inherits a working company application that nobody owns. You read it, write a spec for a feature a stakeholder has asked for, build it with Claude Code, and ship it.
+Along the way you build an MCP server that reads the database safely, fix a wrong report, refactor an importer, and review your own work.
+You have 2 days. All five tracks use the same stack (ASP.NET Core 8, EF Core, MySQL, React 19 + TypeScript) and the same tasks.
 
-## The 5 tracks
+| Track | Company | What you build | Folder |
+|---|---|---|---|
+| 1 | Northgate Freight (logistics) | Shipment tracking: status rules, exceptions, arrival time in one call | [track-1-logistics](track-1-logistics/) |
+| 2 | Harbourline Insurance | Claims workflow: triage, approval limits per handler, settlement | [track-2-insurance](track-2-insurance/) |
+| 3 | Kestrel Outfitters (retail) | Returns and refunds: return window, grading, partial refunds, restock | [track-3-retail](track-3-retail/) |
+| 4 | Larchmont Hotels | Housekeeping and room-status board with a turnaround target | [track-4-hospitality](track-4-hospitality/) |
+| 5 | Corrin Utility Services (field service) | Work orders and engineer scheduling | [track-5-fieldservice](track-5-fieldservice/) |
 
-| Track | What you build | Folder |
-|-------|----------------|--------|
-| 1 | Library Book Borrowing | [track-1-library](track-1-library) |
-| 2 | Clinic Appointment Booking | [track-2-clinic](track-2-clinic) |
-| 3 | Office Canteen Food Ordering | [track-3-canteen](track-3-canteen) |
-| 4 | IT Helpdesk Tickets | [track-4-helpdesk](track-4-helpdesk) |
-| 5 | Team Expense Tracker | [track-5-expenses](track-5-expenses) |
+## Where to start
 
-## How to pick a track
-
-1. Read the "The problem" part of each PROBLEM.md. It takes one minute.
-2. Pick the story you find most interesting.
-3. Open that folder and follow its README.md and PROBLEM.md.
-
-## Rules
-
-1. Work alone or in pairs.
-2. Use Claude Code for everything: reading, fixing, building, testing.
-3. Commit often. Small commits are better than one big one.
-4. Every track has the same stack as LearnHub: .NET 8 Minimal API, React + Vite, xUnit.
-
-## Timeline
-
-- **Day 7:** fix the starter code (write FIXES.md), make a plan, build the must-haves.
-- **Day 8:** finish, write tests, practise, and give your 5-minute demo.
+Start with [CAPSTONE.md](CAPSTONE.md). Then open your track's `README.md`, `docs/stakeholder-brief.md` and `DELIVERABLES.md`, in that order.
 
 ## Scoring (100 points)
 
-| Part | Points |
-|------|--------|
-| Works (must-haves work in the browser) | 40 |
-| Uses Claude Code features (CLAUDE.md, skill, hook, slash command, agents, MCP) | 30 |
-| Code and tests | 20 |
-| Demo | 10 |
+| Task | Points |
+|---|---|
+| 1. Onboard and set up Claude Code | 10 |
+| 2. MCP server to MySQL | 20 |
+| 3. Brief to spec | 15 |
+| 4. Build the feature backend | 15 |
+| 5. Fix the ticket | 8 |
+| 6. Refactor the importer | 6 |
+| 7. Feature UI | 6 |
+| 8. Tests | 8 |
+| 9. Review, harden and ship | 9 |
+| Prompt journal and AI usage reflection | 3 |
 
-## Claude Code you must use
-
-Every track needs all of these.
-
-- [ ] A CLAUDE.md for your project
-- [ ] At least 1 skill
-- [ ] At least 1 hook
-- [ ] At least 1 slash command
-- [ ] At least 2 agents working together (draw an agent map: boxes and arrows, save it in docs/agent-map.md)
-- [ ] At least 1 MCP server
-
-## Day 8 demo (5 minutes)
-
-1. Show the problem in one minute (see the track notes in your PROBLEM.md).
-2. Show your FIXES.md. Say what the 5 problems were.
-3. Run the app and show the main flow (see the track notes in your PROBLEM.md).
-4. Show your .claude folder: CLAUDE.md, skill, hook, slash command.
-5. Show your agent map and run the agents together.
-6. Show the MCP server you used and what it gave you.
-7. Run `dotnet test`. Say what you learned.
+There are no marks for features beyond the brief.

@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Northgate.Api", "Northgate.Api\Northgate.Api.csproj", "{4DDCFA10-C8BD-4526-9867-176CC3AC529C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Northgate.Tests", "Northgate.Tests\Northgate.Tests.csproj", "{628B6B1B-FEFA-48B5-8F24-832ADD264D72}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4DDCFA10-C8BD-4526-9867-176CC3AC529C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4DDCFA10-C8BD-4526-9867-176CC3AC529C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4DDCFA10-C8BD-4526-9867-176CC3AC529C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4DDCFA10-C8BD-4526-9867-176CC3AC529C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{628B6B1B-FEFA-48B5-8F24-832ADD264D72}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{628B6B1B-FEFA-48B5-8F24-832ADD264D72}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{628B6B1B-FEFA-48B5-8F24-832ADD264D72}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{628B6B1B-FEFA-48B5-8F24-832ADD264D72}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

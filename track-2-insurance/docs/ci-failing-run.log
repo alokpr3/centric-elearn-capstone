@@ -1,0 +1,59 @@
+2026-10-22T08:14:03.1180442Z ##[group]Run started: ci / backend (push to main, 4e91c07)
+2026-10-22T08:14:03.1181793Z Current runner version: '2.319.1'
+2026-10-22T08:14:03.1209611Z Operating System: Ubuntu 22.04.5 LTS
+2026-10-22T08:14:03.1210277Z Runner Image: ubuntu-22.04 (20260928.1.0)
+2026-10-22T08:14:03.1211020Z ##[endgroup]
+2026-10-22T08:14:03.4412207Z ##[group]Run actions/checkout@v4
+2026-10-22T08:14:03.4413300Z with:
+2026-10-22T08:14:03.4413791Z   repository: harbourline-insurance/claims-platform
+2026-10-22T08:14:03.4414388Z   ref: refs/heads/main
+2026-10-22T08:14:03.4415025Z   fetch-depth: 1
+2026-10-22T08:14:03.4415570Z ##[endgroup]
+2026-10-22T08:14:04.2208841Z Syncing repository: harbourline-insurance/claims-platform
+2026-10-22T08:14:05.0307712Z Checking out the ref
+2026-10-22T08:14:05.1019330Z /usr/bin/git log -1 --format='%H'
+2026-10-22T08:14:05.1042778Z '4e91c07a52b3c3d1a3b0e3f7f1a5e0a6a8c1d9b2'
+2026-10-22T08:14:05.1317645Z ##[group]Run actions/setup-dotnet@v4
+2026-10-22T08:14:05.1318534Z with:
+2026-10-22T08:14:05.1319011Z   dotnet-version: 6.0.x
+2026-10-22T08:14:05.1319520Z ##[endgroup]
+2026-10-22T08:14:06.0124419Z Installed version is 6.0.428
+2026-10-22T08:14:06.0511830Z ##[group]Run dotnet restore
+2026-10-22T08:14:06.0512722Z shell: /usr/bin/bash -e {0}
+2026-10-22T08:14:06.0513245Z ##[endgroup]
+2026-10-22T08:14:06.1203391Z ##[error]An error occurred trying to start process '/usr/bin/bash' with working directory '/home/runner/work/claims-platform/claims-platform/backend/src'. No such file or directory
+2026-10-22T08:14:06.1442907Z Post job cleanup.
+2026-10-22T08:14:06.3158816Z Cleaning up orphan processes
+2026-10-22T08:14:06.3391102Z ##[error]Process completed with exit code 1.
+
+2026-10-22T08:14:03.2210984Z ##[group]Run started: ci / frontend (push to main, 4e91c07)
+2026-10-22T08:14:03.2212031Z Operating System: Ubuntu 22.04.5 LTS
+2026-10-22T08:14:03.2212678Z ##[endgroup]
+2026-10-22T08:14:04.1139921Z ##[group]Run actions/setup-node@v4
+2026-10-22T08:14:04.1140715Z with:
+2026-10-22T08:14:04.1141226Z   node-version: 14
+2026-10-22T08:14:04.1141700Z ##[endgroup]
+2026-10-22T08:14:04.9022381Z Found in cache @ /opt/hostedtoolcache/node/14.21.3/x64
+2026-10-22T08:14:05.4418290Z ##[group]Run npm ci
+2026-10-22T08:14:05.4419008Z shell: /usr/bin/bash -e {0}
+2026-10-22T08:14:05.4419612Z ##[endgroup]
+2026-10-22T08:14:05.9120174Z npm WARN read-shrinkwrap This version of npm is compatible with lockfileVersion@1, but package-lock.json was generated for lockfileVersion@3. I'll try to do my best with it!
+2026-10-22T08:14:21.7783301Z npm WARN notsup Unsupported engine for vite@6.0.7: wanted: {"node":"^18.0.0 || ^20.0.0 || >=22.0.0"} (current: {"node":"14.21.3","npm":"6.14.18"})
+2026-10-22T08:14:21.7784419Z npm WARN notsup Not compatible with your version of node/npm: vite@6.0.7
+2026-10-22T08:14:21.7785120Z npm WARN notsup Unsupported engine for @vitejs/plugin-react@4.3.4: wanted: {"node":"^14.18.0 || >=16.0.0"} (current: {"node":"14.21.3","npm":"6.14.18"})
+2026-10-22T08:14:38.2057714Z added 71 packages in 32.4s
+2026-10-22T08:14:38.2810043Z ##[group]Run npm run build
+2026-10-22T08:14:38.2810725Z shell: /usr/bin/bash -e {0}
+2026-10-22T08:14:38.2811290Z ##[endgroup]
+2026-10-22T08:14:38.6307718Z
+2026-10-22T08:14:38.6308420Z > harbourline-web@0.1.0 build
+2026-10-22T08:14:38.6309004Z > tsc -b && vite build
+2026-10-22T08:14:38.6309444Z
+2026-10-22T08:14:44.9120339Z file:///home/runner/work/claims-platform/claims-platform/frontend/node_modules/vite/dist/node/cli.js:2
+2026-10-22T08:14:44.9121207Z import { performance } from 'node:perf_hooks';
+2026-10-22T08:14:44.9121798Z          ^^^^^^^^^^^^^
+2026-10-22T08:14:44.9122340Z SyntaxError: The requested module 'node:perf_hooks' does not provide an export named 'performance'
+2026-10-22T08:14:44.9123011Z     at ModuleJob._instantiate (internal/modules/esm/module_job.js:120:21)
+2026-10-22T08:14:44.9123612Z     at async ModuleJob.run (internal/modules/esm/module_job.js:165:5)
+2026-10-22T08:14:44.9124200Z     at async Loader.import (internal/modules/esm/loader.js:178:24)
+2026-10-22T08:14:44.9215563Z ##[error]Process completed with exit code 1.

@@ -1,0 +1,15 @@
+services:
+  db:
+    image: mysql:8.4
+    environment:
+      MYSQL_ROOT_PASSWORD: Root!Pass1
+      MYSQL_DATABASE: harbourline
+    ports:
+      - "3306:3306"
+
+  api:
+    image: harbourline-api
+    ports:
+      - "5102:5102"
+    environment:
+      ASPNETCORE_URLS: http://+:5102

@@ -1,0 +1,23 @@
+:root { font-family: system-ui, sans-serif; color: #1c2430; background: #f5f6f8; }
+body { margin: 0; }
+.topbar { display: flex; align-items: center; gap: 2rem; background: #12304f; color: #fff; padding: 0.75rem 1.5rem; }
+.brand { font-weight: 700; letter-spacing: 0.03em; }
+.topbar nav { display: flex; gap: 1rem; }
+.topbar a { color: #b9cbe0; text-decoration: none; }
+.topbar a.active { color: #fff; border-bottom: 2px solid #f0b429; }
+.content { max-width: 1100px; margin: 1.5rem auto; padding: 0 1rem; }
+table { width: 100%; border-collapse: collapse; background: #fff; margin-top: 1rem; }
+th, td { text-align: left; padding: 0.5rem 0.75rem; border-bottom: 1px solid #e3e7ec; }
+th { background: #eef1f5; font-size: 0.85rem; }
+.filters { display: flex; gap: 1rem; margin: 0.5rem 0; }
+input, select, button { padding: 0.4rem 0.6rem; font: inherit; }
+.muted { color: #6b7686; }
+.error { color: #b42318; }
+.headline { font-size: 1.1rem; }
+.badge { padding: 0.1rem 0.5rem; border-radius: 999px; font-size: 0.75rem; background: #dde3ea; }
+.badge-delivered { background: #d1f0dc; }
+.badge-cancelled { background: #e5e7eb; text-decoration: line-through; }
+.badge-failed_delivery { background: #fcd9d6; }
+.notes { padding-left: 1.2rem; }
+dl { display: grid; grid-template-columns: 10rem 1fr; gap: 0.3rem 1rem; }
+dt { color: #6b7686; }

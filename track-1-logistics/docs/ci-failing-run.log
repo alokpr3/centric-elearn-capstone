@@ -1,0 +1,31 @@
+##[group]Run actions/checkout@v4
+2026-10-02T08:14:03.1180442Z Syncing repository: northgate-freight/northgate
+2026-10-02T08:14:03.9921036Z Checking out the ref
+2026-10-02T08:14:04.6120457Z ##[endgroup]
+2026-10-02T08:14:04.7050110Z ##[group]Run actions/setup-dotnet@v4
+2026-10-02T08:14:04.7051203Z with:
+2026-10-02T08:14:04.7051644Z   dotnet-version: 6.0.x
+2026-10-02T08:14:05.3184719Z Attempting to download 6.0.428...
+2026-10-02T08:14:07.2210538Z Installed version is 6.0.428
+2026-10-02T08:14:07.2260311Z ##[endgroup]
+2026-10-02T08:14:07.2341975Z ##[group]Run dotnet restore
+2026-10-02T08:14:08.6104420Z   Determining projects to restore...
+2026-10-02T08:14:09.0357726Z /usr/share/dotnet/sdk/6.0.428/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.TargetFrameworkInference.targets(144,5): error NETSDK1045: The current .NET SDK does not support targeting .NET 8.0.  Either target .NET 6.0 or lower, or use a version of the .NET SDK that supports .NET 8.0. [/home/runner/work/northgate/northgate/backend/Northgate.Api/Northgate.Api.csproj]
+2026-10-02T08:14:09.0359412Z /usr/share/dotnet/sdk/6.0.428/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.TargetFrameworkInference.targets(144,5): error NETSDK1045: The current .NET SDK does not support targeting .NET 8.0.  Either target .NET 6.0 or lower, or use a version of the .NET SDK that supports .NET 8.0. [/home/runner/work/northgate/northgate/backend/Northgate.Tests/Northgate.Tests.csproj]
+2026-10-02T08:14:09.0481122Z ##[error]Process completed with exit code 1.
+2026-10-02T08:14:09.1011873Z Post job cleanup.
+2026-10-02T08:14:09.2188840Z Cleaning up orphan processes
+
+##[group]Run actions/setup-node@v4
+2026-10-02T08:14:03.4410220Z with:
+2026-10-02T08:14:03.4410871Z   node-version: 20
+2026-10-02T08:14:04.1822406Z Found in cache @ /opt/hostedtoolcache/node/20.18.0/x64
+2026-10-02T08:14:04.9043311Z ##[endgroup]
+2026-10-02T08:14:04.9120457Z ##[group]Run npm ci
+2026-10-02T08:14:04.9121108Z   npm ci
+2026-10-02T08:14:05.0033419Z ##[error]An error occurred trying to start process '/usr/bin/bash' with working directory '/home/runner/work/northgate/northgate/web'. No such file or directory
+2026-10-02T08:14:05.0701128Z Post job cleanup.
+
+Error: Process completed with exit code 1.
+Workflow: ci
+Jobs: backend (failed), frontend (failed)

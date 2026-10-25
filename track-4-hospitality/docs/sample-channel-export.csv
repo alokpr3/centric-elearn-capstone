@@ -1,0 +1,14 @@
+external_ref,channel,hotel_code,room_type_code,guest_first,guest_last,guest_email,guest_phone,check_in,check_out,adults,rate_plan_code,total_amount,status
+BKG-801000101,BKG,EDI,STD,Priya,Raman,priya.raman@example.com,+44 7700 900101,2026-10-12,2026-10-14,2,BAR,,CONFIRMED
+BKG-801000102,BKG,MAN,SUP,Tom,Whitaker,tom.whitaker@example.org,+44 7700 900102,2026-10-15,2026-10-18,2,ADV,318.75,CONFIRMED
+EXP-801000103,EXP,LON,FAM,Marta,Kowalska,marta.k@example.net,+44 7700 900103,2026-10-20,2026-10-23,4,PKG,,CONFIRMED
+EXP-801000104,EXP,BTH,TWN,Chidi,Okafor,chidi.okafor@example.com,,2026-11-02,2026-11-04,2,BAR,229.90,CONFIRMED
+BKG-801000105,BKG,BRI,STD,Jacob,Thomas,jacob.thomas44@example.net,+44 7700 900105,2026-10-25,2026-10-26,1,,,CONFIRMED
+BKG-730427760,BKG,LON,JNR,Jacob,Thomas,jacob.thomas44@example.net,+44 7700 900105,2026-10-02,2026-10-04,2,BAR,,CANCELLED
+BKG-711587811,BKG,EDI,SUP,Ella,Jackson,ella.jackson92@example.org,+44 7700 900106,2026-10-10,2026-10-12,2,BAR,,MODIFIED
+BKG-801000108,BKG,XXX,STD,Lena,Fischer,lena.fischer@example.com,+44 7700 900108,2026-10-12,2026-10-14,2,BAR,,CONFIRMED
+BKG-801000109,BKG,LDS,STD,Omar,Haddad,omar.haddad@example.com,+44 7700 900109,2026-10-31,2026-10-30,2,BAR,,CONFIRMED
+BKG-801000110,BKG,MAN,STD,Sam,Doyle,sam.doyle@example.com,+44 7700 900110,2026-10-14,2026-10-16,3,BAR,,CONFIRMED
+EXP-801000111,EXP,EDI,STE,"Ahmed, Dr",Rahman,a.rahman@example.org,+44 7700 900111,2026-12-27,2026-12-30,2,CORP,,CONFIRMED
+BKG-801000112,BKG,BRI,TWN,Ines,Duarte,not-an-email,+44 7700 900112,2026-11-08,2026-11-10,2,BAR,,CONFIRMED
+BKG-801000113,BKG,BTH,SUP,Kwame,Mensah,kwame.mensah@example.net,+44 7700 900113,2026-11-14,2026-11-17,2,ADV,,CONFIRMED

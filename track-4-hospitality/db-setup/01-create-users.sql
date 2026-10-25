@@ -1,0 +1,4 @@
+CREATE DATABASE IF NOT EXISTS larchmont CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci;
+CREATE USER IF NOT EXISTS 'larchmont_app'@'%' IDENTIFIED BY 'Larch#App2026';
+GRANT ALL PRIVILEGES ON larchmont.* TO 'larchmont_app'@'%';
+FLUSH PRIVILEGES;

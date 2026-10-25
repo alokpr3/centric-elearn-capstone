@@ -1,0 +1,51 @@
+Run started: 2026-10-23T16:41:07Z   Workflow: CI   Event: push   Branch: main   Commit: 3f9c2ab
+
+=== Job: backend ===
+2026-10-23T16:41:12.4411820Z Current runner version: '2.319.1'
+2026-10-23T16:41:12.4437260Z ##[group]Operating System
+2026-10-23T16:41:12.4438410Z Ubuntu
+2026-10-23T16:41:12.4438890Z 22.04.5
+2026-10-23T16:41:12.4439320Z LTS
+2026-10-23T16:41:12.4439790Z ##[endgroup]
+2026-10-23T16:41:13.0214500Z ##[group]Run actions/checkout@v4
+2026-10-23T16:41:13.7830910Z ##[endgroup]
+2026-10-23T16:41:13.9921470Z ##[group]Run actions/setup-dotnet@v4
+2026-10-23T16:41:13.9922480Z with:
+2026-10-23T16:41:13.9922950Z   dotnet-version: 6.0.x
+2026-10-23T16:41:13.9923310Z ##[endgroup]
+2026-10-23T16:41:15.3105660Z Installing .NET Core SDK with version 6.0.428
+2026-10-23T16:41:20.8841020Z dotnet-install: Installed version is 6.0.428
+2026-10-23T16:41:21.0102240Z ##[group]Run dotnet restore
+2026-10-23T16:41:21.0102870Z dotnet restore
+2026-10-23T16:41:21.0143110Z shell: /usr/bin/bash -e {0}
+2026-10-23T16:41:21.0143550Z ##[endgroup]
+2026-10-23T16:41:22.3320470Z   Determining projects to restore...
+2026-10-23T16:41:22.9017650Z /usr/share/dotnet/sdk/6.0.428/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.TargetFrameworkInference.targets(144,5): error NETSDK1045: The current .NET SDK does not support targeting .NET 8.0.  Either target .NET 6.0 or lower, or use a version of the .NET SDK that supports .NET 8.0. [/home/runner/work/larchmont/larchmont/backend/Larchmont.Api/Larchmont.Api.csproj]
+2026-10-23T16:41:22.9019360Z /usr/share/dotnet/sdk/6.0.428/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.TargetFrameworkInference.targets(144,5): error NETSDK1045: The current .NET SDK does not support targeting .NET 8.0.  Either target .NET 6.0 or lower, or use a version of the .NET SDK that supports .NET 8.0. [/home/runner/work/larchmont/larchmont/backend/Larchmont.Tests/Larchmont.Tests.csproj]
+2026-10-23T16:41:22.9330710Z ##[error]Process completed with exit code 1.
+2026-10-23T16:41:22.9460300Z Post job cleanup.
+
+=== Job: frontend ===
+2026-10-23T16:41:12.1180340Z Current runner version: '2.319.1'
+2026-10-23T16:41:12.1205120Z ##[group]Operating System
+2026-10-23T16:41:12.1205800Z Ubuntu
+2026-10-23T16:41:12.1206190Z 22.04.5
+2026-10-23T16:41:12.1206540Z LTS
+2026-10-23T16:41:12.1206890Z ##[endgroup]
+2026-10-23T16:41:12.7700610Z ##[group]Run actions/checkout@v4
+2026-10-23T16:41:13.4402190Z ##[endgroup]
+2026-10-23T16:41:13.6120350Z ##[group]Run actions/setup-node@v4
+2026-10-23T16:41:13.6121020Z with:
+2026-10-23T16:41:13.6121380Z   node-version: 20
+2026-10-23T16:41:14.2250910Z Attempting to download 20...
+2026-10-23T16:41:16.0405570Z Acquiring 20.18.0 - x64 from https://github.com/actions/node-versions/releases/download/20.18.0-10914833250/node-20.18.0-linux-x64.tar.gz
+2026-10-23T16:41:18.9902210Z ##[endgroup]
+2026-10-23T16:41:19.1120030Z ##[group]Run npm ci
+2026-10-23T16:41:19.1120440Z npm ci
+2026-10-23T16:41:19.1155790Z shell: /usr/bin/bash -e {0}
+2026-10-23T16:41:19.1156180Z   working-directory: web
+2026-10-23T16:41:19.1156510Z ##[endgroup]
+2026-10-23T16:41:19.1301260Z ##[error]An error occurred trying to start process '/usr/bin/bash' with working directory '/home/runner/work/larchmont/larchmont/web'. No such file or directory
+2026-10-23T16:41:19.1420330Z Post job cleanup.
+
+Run finished: 2026-10-23T16:41:26Z   Result: FAILED (backend: failure, frontend: failure)

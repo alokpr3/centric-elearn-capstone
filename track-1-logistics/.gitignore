@@ -1,0 +1,9 @@
+bin/
+obj/
+node_modules/
+dist/
+.vs/
+*.user
+.env
+.DS_Store
+*.tsbuildinfo

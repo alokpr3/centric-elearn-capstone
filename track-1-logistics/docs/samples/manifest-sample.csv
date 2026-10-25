@@ -1,0 +1,15 @@
+reference,account_no,origin_depot,dest_depot,service_level,parcels,weight_kg,recipient_name,recipient_phone,delivery_address,delivery_postcode,booked_date,notes
+,NGC01000,LDS,MAN,NEXT_DAY,3,41.5,Alan Turner,07412 556120,"14 Mill Road, Salford",M5 4QT,2026-10-01,Leave with reception
+,NGC01013,LDS,NCL,ECONOMY,1,8.2,Beth Shah,07533 120984,"2 Station Approach, Gateshead",NE8 2AB,2026-10-01,
+,NGC01026,BHM,LPR,EXPRESS AM,2,19.0,Chris Bailey,07700 900311,"88 High Street, Acton",W3 6RL,01/10/2026,Call before arrival
+,NGC01039,CRY,BRS,Pallet,1,640,Dina Gordon,07855 301177,"Unit 4 Orchard Close, Avonmouth",BS11 9XY,2026-10-01,Tail-lift needed
+,NGC01052,EXE,EXE,SAME_DAY,2,12.4,Ed Wood,07911 223344,"7 Church Lane, Exeter",EX2 8PQ,2026-10-01,
+,NGC01065,GLA,EDI,NEXT_DAY,6,73.9,Farah Clarke,07823 667700,"31 Kings Avenue, Leith",EH6 5TT,2026-10-01,
+,NGC01078,MAN,LIV,ECONOMY,4,55.0,Greg Holt,07455 880021,"19 Chapel Row, Bootle",L20 3AD,2026-10-01,Fragile
+,NGC09999,MAN,LIV,ECONOMY,1,5.0,Hana Barnes,07400 100200,"3 The Green, Wirral",CH41 2AA,2026-10-01,
+,NGC01091,XXX,LDS,NEXT_DAY,1,6.0,Iain Ford,07500 300400,"5 Albert Street, Leeds",LS1 4DL,2026-10-01,
+,NGC01091,LDS,SHF,SOMETIME,1,6.0,Jess Gill,07511 310410,"5 Victoria Road, Sheffield",S1 2HE,2026-10-01,
+,NGC01000,LDS,LDS,NEXT_DAY,0,6.0,Karim Watts,07522 320420,"8 Station Approach, Leeds",LS2 7JJ,2026-10-01,
+NGF40110619,NGC01000,LDS,LPR,NEXT_DAY,2,14.0,Liz Ross,07533 330430,"9 Mill Road, Pudsey",LS28 6BB,2026-10-01,Reference already in use
+,NGC01013,NCL,NCL,NEXT_DAY,1,3.1,Mo Lamb,07544 340440,"12 Kings Avenue, Newcastle",NE1 4ST,31-09-2026,
+,NGC01091,SHF,LDS,ECONOMY,5,62.0,Nia Hale,07555 350450,"60 Canal Street, Leeds",LS9 8LJ,2026-10-01,

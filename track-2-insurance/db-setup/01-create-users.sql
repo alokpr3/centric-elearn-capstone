@@ -1,0 +1,4 @@
+CREATE DATABASE IF NOT EXISTS harbourline CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci;
+CREATE USER IF NOT EXISTS 'harbourline_app'@'%' IDENTIFIED BY 'HlApp#2026pass';
+GRANT ALL PRIVILEGES ON harbourline.* TO 'harbourline_app'@'%';
+FLUSH PRIVILEGES;

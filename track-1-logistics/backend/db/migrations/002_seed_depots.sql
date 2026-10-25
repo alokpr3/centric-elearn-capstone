@@ -1,0 +1,20 @@
+-- reference depots
+INSERT INTO depots (id, code, name, region_code, city, daily_capacity, is_active, created_at) VALUES
+(1, 'MAN', 'Manchester Trafford Park', 'NW', 'Manchester', 420, 1, '2025-11-03 09:00:00'),
+(2, 'LIV', 'Liverpool Seaforth', 'NW', 'Liverpool', 300, 1, '2025-11-03 09:00:00'),
+(3, 'PRE', 'Preston Walton Summit', 'NW', 'Preston', 240, 1, '2025-11-03 09:00:00'),
+(4, 'LDS', 'Leeds Stourton', 'NE', 'Leeds', 380, 1, '2025-11-03 09:00:00'),
+(5, 'NCL', 'Newcastle Team Valley', 'NE', 'Newcastle', 260, 1, '2025-11-03 09:00:00'),
+(6, 'SHF', 'Sheffield Tinsley', 'NE', 'Sheffield', 250, 1, '2025-11-03 09:00:00'),
+(7, 'BHM', 'Birmingham Minworth', 'MID', 'Birmingham', 460, 1, '2025-11-03 09:00:00'),
+(8, 'NTG', 'Nottingham Giltbrook', 'MID', 'Nottingham', 280, 1, '2025-11-03 09:00:00'),
+(9, 'LEI', 'Leicester Braunstone', 'MID', 'Leicester', 270, 1, '2025-11-03 09:00:00'),
+(10, 'COV', 'Coventry Whitley', 'MID', 'Coventry', 230, 1, '2025-11-03 09:00:00'),
+(11, 'LPR', 'London Park Royal', 'SE', 'London', 520, 1, '2025-11-03 09:00:00'),
+(12, 'CRY', 'Croydon Purley Way', 'SE', 'Croydon', 340, 1, '2025-11-03 09:00:00'),
+(13, 'SOU', 'Southampton Millbrook', 'SE', 'Southampton', 250, 1, '2025-11-03 09:00:00'),
+(14, 'DVR', 'Dover Eastern Docks', 'SE', 'Dover', 200, 1, '2025-11-03 09:00:00'),
+(15, 'BRS', 'Bristol Avonmouth', 'SW', 'Bristol', 330, 1, '2025-11-03 09:00:00'),
+(16, 'EXE', 'Exeter Marsh Barton', 'SW', 'Exeter', 190, 1, '2025-11-03 09:00:00'),
+(17, 'GLA', 'Glasgow Eurocentral', 'SCO', 'Glasgow', 350, 1, '2025-11-03 09:00:00'),
+(18, 'EDI', 'Edinburgh Newbridge', 'SCO', 'Edinburgh', 260, 1, '2025-11-03 09:00:00');

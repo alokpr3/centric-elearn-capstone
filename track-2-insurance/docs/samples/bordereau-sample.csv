@@ -1,0 +1,11 @@
+ExternalRef,PolicyNumber,LossDate,ReportedDate,ClaimType,Description,EstimatedAmount,ContactEmail
+BDX-2026-10-0001,HLM-100045,2026-08-14,2026-08-16,Collision,"Rear-ended at traffic lights, bumper and boot damage",1850.00,
+BDX-2026-10-0002,HLH-100012,14/08/2026,15/08/2026,Escape of water,"Burst pipe under kitchen sink, floor damaged","£3,200.00",
+BDX-2026-10-0003,HLM-100101,2026-09-02,,Windscreen,Stone chip cracked windscreen,285.50,
+BDX-2026-10-0004,HLH-999999,2026-09-03,2026-09-04,Theft,Bicycle stolen from shed,640.00,
+BDX-2026-10-0005,HLH-100033,2026-13-45,2026-09-05,Vandalism,Garden wall damaged,720.00,
+BDX-2026-10-0006,HLH-100060,2026-09-10,2026-09-09,Storm damage,Roof tiles blown off in storm,4100.00,
+BDX-2026-10-0007,HLM-100120,2026-09-11,2026-09-12,Fire,Electrical fault in engine bay,-500,
+BDX-2026-10-0008,HLH-100005,5 Sep 2026,6 Sep 2026,Accidental damage,"Glass hob cracked, replacement needed",450.00,
+BDX-2026-10-0002,HLH-100012,2026-08-14,2026-08-15,Escape of water,Duplicate line for the same claim,3200.00,
+BDX-2026-10-0010,HLM-100009,2026-08-20,2026-08-21,Collision,Loss predates the start of the policy,900.00,
